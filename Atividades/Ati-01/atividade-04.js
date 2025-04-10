@@ -5,4 +5,5 @@ peso.
 
 let peso = 53;
 let altura = 1.63;
-console.log("IMC: "+(peso/(altura*altura)));
+let imc = peso/(altura*altura)
+console.log("IMC: "+ imc.toFixed(2));
