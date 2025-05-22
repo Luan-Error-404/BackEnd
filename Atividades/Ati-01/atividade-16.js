@@ -17,8 +17,10 @@ salário atual de um funcionário, em seguida calcule e
 imprima o seu novo salário. Use a instrução switch.
 */
 
-let categoria = "B";
-let salario = 3500;
+import rl from 'readline-sync';
+
+let categoria = rl.question("Digite a sua categoria: ").toUpperCase();
+let salario = rl.questionFloat("Digite seu salário: ");
 
 switch (categoria) {
     case "A":
@@ -33,4 +35,7 @@ switch (categoria) {
     case "D":
         console.log (`Seu salário atual é de R$ ${salario}, sendo assim, seu salário irá para R$ ${salario + (salario*0.2)}.`)
         break;
+    
+    default:
+        console.log("Seu burro! Coloque uma opção válida!");
 }

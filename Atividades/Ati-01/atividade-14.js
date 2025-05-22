@@ -3,29 +3,59 @@
 do mês.
 */
 
-let mes = 7;
-if (mes == 1) {
-    console.log("É Janeiro!");
-} else if (mes == 2) {
-    console.log("É Fevereiro!");
-} else if (mes == 3) {
-    console.log("É Março!");
-} else if (mes == 4) {
-    console.log("É Abril!");
-} else if (mes == 5) {
-    console.log("É Maio!");
-} else if (mes == 6) {
-    console.log("É Junho!");
-} else if (mes == 7) {
-    console.log("É Julho!");
-} else if (mes == 8) {
-    console.log("É Agosto");
-} else if (mes == 9) {
-    console.log("É Setembro!");
-} else if (mes == 10) {
-    console.log("É Outubro!");
-} else if (mes == 11) {
-    console.log("É Novembro!");
-} else if (mes == 12) {
-    console.log("É Dezembro!");
-} 
+import rl from 'readline-sync';
+
+let mes = rl.questionInt("Informe o mês em números: ")
+
+switch (mes) {
+    case 1:
+        console.log("É Janeiro!");
+        break;
+
+    case 2:
+        console.log("É Fevereiro!");
+        break;
+
+    case 3:
+        console.log("É Março!");
+        break;
+
+    case 4:
+        console.log("É Abril!");
+        break;
+
+    case 5:
+        console.log("É Maio!");
+        break;
+
+    case 6:
+        console.log("É Junho!");
+        break;
+
+    case 7:
+        console.log("É Julho!");
+        break;
+
+    case 8:
+        console.log("É Agosto!");
+        break;
+
+    case 9:
+        console.log("É Setembro!");
+        break;
+
+    case 10:
+        console.log("É Outubro!");
+        break;
+
+    case 11:
+        console.log("É Novembro!");
+        break;
+
+    case 12:
+        console.log("É Dezembro!");
+        break;
+
+    default:
+        break;
+}
